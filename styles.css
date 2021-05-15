@@ -31,7 +31,7 @@ p{
     margin: 15px 0 20px 0;
 }
 
-button{
+.btn{
     background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
     color: white;
     border: none;
@@ -41,7 +41,7 @@ button{
     font-size: 14px;
 }
 
-button:hover{
+.btn:hover{
     cursor: pointer;
     background-image: linear-gradient(to right,hsl(136, 65%, 65%),hsl(192, 70%, 65%));
 }
@@ -60,6 +60,7 @@ a{
     align-items: center;
     position: relative;
     z-index: 100;
+    flex-wrap: wrap;
 }
 
 nav{
@@ -73,6 +74,17 @@ nav a{
 nav a:hover{
     cursor: pointer;
     color: black;
+}
+
+#hamburger{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    display: none;
+  }
+
+#close{
+    display: none;
 }
 
 .one{
@@ -142,6 +154,7 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
   }
   
   .col{
@@ -192,7 +205,7 @@ footer span{
     width: 250px;
 }
 
-.btn{
+.bt{
     width: 100%;
     align-items: flex-end;
 }
@@ -204,4 +217,102 @@ footer span{
 .icons svg:hover{
     cursor: pointer;
     background-color: hsl(136, 65%, 51%);
+}
+
+@media only screen and (max-width: 833px){
+  
+    .nav-bar{
+      padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    }
+  
+    #hamburger{
+        display: block;
+        align-self: flex-end;
+      }
+  
+    nav{
+      display: none;
+    }
+
+    #nav-bar.show nav{
+        display: flex;
+       flex-direction: column;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       gap: 10px;
+      }
+    
+      #nav-bar.show #ham{
+        display: none;
+      }
+    
+      #nav-bar.show #close{
+        display: block;
+      }
+  
+    .nav-btn{
+      display: none;
+    }
+
+    .one{
+        flex-direction: column-reverse;
+        padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    }
+
+    .content{
+        padding: 0;
+        text-align: center;
+    }
+
+    .mockup{
+        height: 450px;
+        position: relative;
+        right: 10%;
+        top:150px;
+        left: 0;
+    }
+
+    .two,.three{
+        padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+        text-align: center;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    }
+
+    .social{
+        margin-right: 0px;
+    }
+
+    .links{
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .links:nth-child(-n+3){
+        margin-right: 0;
+    }
+
+    .bt{
+        width: 250px;
+        margin: 20px auto;
+        align-items: center;
+    }
 }
