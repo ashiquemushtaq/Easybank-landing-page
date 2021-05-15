@@ -221,6 +221,10 @@ footer span{
 }
 
 @media only screen and (max-width: 833px){
+    *{
+        overflow-x: hidden;
+    }
+    
     .nav-bar{
       padding: 1.2rem 1.5rem 1.2rem 1.5rem;
     }
