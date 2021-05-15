@@ -293,7 +293,7 @@ footer span{
 
     footer{
         flex-direction: column;
-        width: 101%;
+        overflow-x:hidden;
         align-items: center;
         justify-content: center;
         text-align: center;
