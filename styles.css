@@ -275,6 +275,7 @@ footer span{
         height: 450px;
         left: 5px;
         top:-80px
+        overflow-x: hidden;
     }
 
     .two,.three{
@@ -293,7 +294,6 @@ footer span{
 
     footer{
         flex-direction: column;
-        overflow-x:hidden;
         align-items: center;
         justify-content: center;
         text-align: center;
