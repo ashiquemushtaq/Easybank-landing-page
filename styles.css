@@ -87,6 +87,14 @@ nav a:hover{
     display: none;
 }
 
+#hamburger:focus{
+    outline:none;
+}
+
+#close:focus{
+    outline:none;
+}
+
 .one{
     display: flex;
     justify-content: space-between;
