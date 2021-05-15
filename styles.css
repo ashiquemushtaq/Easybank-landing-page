@@ -180,6 +180,7 @@ footer{
     padding: 2rem 5rem 2rem 6rem;
     display: flex;
     align-items: center;
+    width:100%;
 }
 
 footer span{
